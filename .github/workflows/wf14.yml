@@ -27,7 +27,7 @@ jobs:
   example-job:
     runs-on: ubuntu-latest
     name: Save output
-    needs: Explore-GitHub-Actions
+    needs: build
     steps:
       - name: Upload output file
         uses: actions/upload-artifact@v3
